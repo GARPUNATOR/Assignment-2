@@ -15,7 +15,6 @@ public final class Student extends Human implements IStudy {
     public final void study(){
         System.out.println(name + " is student");
     }
-    @Override
     public void attendance() {
         System.out.println(name + " good attendance");
     }

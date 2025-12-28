@@ -13,19 +13,15 @@ public class Employee extends Human implements IStudy, IWork {
         this.salary = salary;
         count++;
     }
-    @Override
     public void work() {
         System.out.println(name + " working at " + company);
     }
-    @Override
     public float getSalary() {
         return salary;
     }
-    @Override
     public void attendance() {
         System.out.println(name + "attends");
     }
-    @Override
     public void study() {
         System.out.println(name + "studies");
     }
