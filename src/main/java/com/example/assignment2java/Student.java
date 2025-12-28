@@ -2,8 +2,8 @@ package com.example.assignment2java;
 import com.example.assignment2java.interfaces.IStudy;
 
 public final class Student extends Human implements IStudy {
-    private String university;
-    private float gpa;
+    private final String university;
+    private final float gpa;
     private final String studentId;
 
     public Student(String name, int age, boolean male, String university, float gpa, String studentId) {
@@ -12,7 +12,7 @@ public final class Student extends Human implements IStudy {
         this.gpa = gpa;
         this.studentId = studentId;
     }
-    public final void study(){
+    public void study(){
         System.out.println(name + " is student");
     }
     public void attendance() {

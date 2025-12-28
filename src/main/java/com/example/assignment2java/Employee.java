@@ -4,8 +4,8 @@ import com.example.assignment2java.interfaces.IStudy;
 import com.example.assignment2java.interfaces.IWork;
 
 public class Employee extends Human implements IStudy, IWork {
-    private String company;
-    private float salary;
+    private final String company;
+    private final float salary;
     public static int count = 0;
     public Employee(String name, int age, boolean male, String company, float salary) {
         super(name, age, male);
